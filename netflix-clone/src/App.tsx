@@ -1,4 +1,5 @@
 import "./App.css";
+import { Banner } from "./components/Banner";
 import { Row } from "./components/Row";
 import { requests } from "./request";
 
@@ -6,6 +7,7 @@ function App() {
   return (
     <div>
       <div className="App">
+        <Banner />
         <Row
           title="NETFLIX ORIGUINALS"
           fetchUrl={requests.feachNetflixOriginals}
